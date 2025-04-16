@@ -19,9 +19,9 @@ A full-featured Hotel Management System to manage room bookings, guest check-ins
 
 | Layer         | Technology Used               |
 |---------------|-------------------------------|
-| Frontend      | HTML, CSS, JavaScript (or React/Bootstrap) |
-| Backend       | Node.js / Express.js (or Django / Flask) |
-| Database      | MongoDB / MySQL / PostgreSQL  |
+| Frontend      | HTML, CSS, JavaScript |
+| Backend       | Php My admin |
+| Database      |  MySQL  |
 | Authentication| JWT / Passport.js / Django Auth |
 | Hosting (optional) | Render / Heroku / Vercel |
 
@@ -31,7 +31,7 @@ A full-featured Hotel Management System to manage room bookings, guest check-ins
 
 ### Prerequisites
 
-- Node.js (for JS backend) / Python (for Django/Flask)
+- Node.js (for JS backend)
 - MongoDB or MySQL installed (or use cloud database like MongoDB Atlas)
 
 ### Installation

@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Sege-UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    color: #333;
+    text-decoration:none ;
+}
+
+h1,h2,h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+
+}
+
+/* Utility Classes */
+
+.container {
+    margin:auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: #F1D3B2;
+}
+
+.lead {
+    font-size : 20px;
+}
+
+.btn{
+    display : inline-block;
+    font-size : 18px;
+    color : #F1D3B2;
+    background : #46211A;
+    padding : 10px;
+    border : none;
+    cursor : pointer;
+    margin: 20px 20px;
+    border-radius: 4px; /* Rounded corners */
+}
+
+.btn:hover{
+    background: #A43820;
+    color: #fff;
+}
+
+.bg-dark {
+    background: #46211A;
+    color: #F1D3B2;
+}
+
+.bg-light {
+    background: #fff;
+    color:  #46211A;
+}
+
+.bg-primary {
+    background: #F1D3B2;
+    color: #46211A;
+}
+
+.clr {
+    clear : both;
+}
+
+.l-heading{ 
+     font-size: 30px;
+} 
+/* padding*/
+.py-2 {
+padding: 20px 0;
+}
+.py-3 {
+    padding: 30px 0;
+    }
+   
+/* Navbar */
+
+#navbar {
+    background: #46211A;
+    color: #F1D3B2;
+    overflow: auto;
+}
+#navbar a {
+    color: #F1D3B2;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top:20px;
+
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{
+    float:left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background: #A43820;
+    color: #f1efec;
+    
+}
+
+
+/* Showcase */
+
+#showcase {
+background : url('../img/showcase.jpg') no-repeat center center/cover;
+min-height : 700px;
+
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align : center;
+    padding-top : 210px;
+}
+
+#showcase .showcase-content h1 {
+    font-size : 60px;
+    line-height : 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom : 20px;
+    line-height : 1.7em;
+}
+
+
+
+/* Features */
+
+.box {
+    float: left;
+    width: 25%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+
+}
+
+
+/* Footer */
+
+#main-footer {
+    text-align: center;
+    background: #46211A;
+    color: #F1D3B2;
+    padding: 18px;
+}
+
+/* about info */
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    
+}
+
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+
+/* Login Signup Container */
+.login-signup-container {
+    position: relative;
+    min-height: calc(100vh - 160px); /* Adjust based on your header/footer actual height */
+    display: flex;  /* Enable Flexbox */
+    align-items: center;  /* Center vertically */
+    flex-direction: column;
+    justify-content: center;  /* Center horizontally */
+    background: url('../img/login-bg.jpg') no-repeat center center/cover;  /* Adjust path as needed */
+}
+
+/* Form box styling for centering and aesthetics */
+.form-box {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Form overlay */
+.form-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form input fields */
+.form-box input[type="text"],
+.form-box input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+}
+
+/* Form submit button */
+.form-box button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #46211A;
+    color: #F1D3B2;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-box button:hover {
+    background-color: #A43820;
+}
+
+.adminbtn {
+    margin-top: 40px; /* Space between the login form and the admin button */
+    text-align: center; /* Center align the button */
+    width: 100%; /* Ensures the link takes full width for better tap target on mobile */
+}
+
+
+
+
+
+
+/* Container for the signup form that doesn't affect the login page */
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;  /* Provides vertical space around the form */
+    padding: 20px 0;  /* Reduced top and bottom padding for less vertical space */
+    background: url('../img/login-bg.jpg') no-repeat center center/cover;  /* Adjust path as needed */
+}
+
+/* Specific form box for signup */
+.signup-form-box {
+    width: 340px; /* Adjust width if necessary */
+    padding: 20px;  /* Reduced padding for less vertical space within the box */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: auto; /* Ensures centering */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for inputs to make sure they use available space effectively */
+.signup-form-box input[type="text"],
+.signup-form-box input[type="password"],
+.signup-form-box input[type="email"],
+.signup-form-box input[type="tel"] {
+    width: 100%;  /* Full width relative to the form box */
+    padding: 8px;  /* Reduced padding inside inputs for a more compact look */
+    margin: 5px 0;  /* Reduced margin for less space between fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-form-box label {
+    display: block;
+    margin-bottom: 2px;  /* Minimized bottom margin for tighter label-to-input relationship */
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+/* Heading style */
+.signup-form-box h2 {
+    margin-bottom: 5px; /* Reduced space below the heading */
+    margin-top: 5px; 
+    color: #333;
+}
+
+.signup-form-box button {
+    width: 100%;  /* Full width of the column */
+    padding: 12px; /* Reduced padding for a less bulky button */
+    margin-top: 10px; /* Reduced top margin */
+    border: none;
+    background-color: #46211A;
+    color: #F1D3B2;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px;
+}
+
+.signup-form-box button:hover {
+    background-color: #A43820;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Increase font size */
+}
+
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;  /* Provides vertical space around the form */
+    padding: 20px 0;  /* Reduced top and bottom padding for less vertical space */
+    background: url('../img/userprofile.jpg') no-repeat center center/cover;  /* Adjust path as needed */
+    flex-direction: column;
+}
+
+.profile-box {
+    width: 340px; /* Adjust width if necessary */
+    padding: 20px;  /* Reduced padding for less vertical space within the box */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: auto; /* Ensures centering */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Additional spacing */
+}
+
+.user-detail {
+    margin: 10px 0;
+    font-size: 20px; /* Larger font size for better readability */
+}
+
+
+
+
+
+
+.actions {
+    display: flex;
+    flex-direction: column;  /* Stacks flex items vertically */
+    align-items: center;     /* Centers flex items horizontally in the container */
+    gap: 10px;               /* Adds space between the buttons */
+}
+
+
+.room-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh; /* Provides adequate vertical space around the form */
+    padding: 20px;
+    background-color: white; /* Plain white background */
+}
+
+.room-container h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.room-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures the form utilizes the full container width */
+    max-width: 500px; /* Maximum width of the form */
+}
+
+.room-container form label {
+    margin-bottom: 10px; /* Adds space below each label */
+}
+
+.room-container form input[type="date"],
+.room-container form input[type="number"] {
+    margin-bottom: 20px; /* Adds space below each input */
+    padding: 10px; /* Adds padding inside the input fields */
+    width: 100%; /* Ensures input fields take full width of the form */
+}
+
+.room-container form button {
+    padding: 10px 20px; /* Adds padding to the button */
+    background-color: #46211A; /* Blue background color */
+    color: white; /* Text color white */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    margin-bottom: 10px;
+}
+
+.room-container form button:hover {
+    background-color: #A43820;/* Darkens the button on hover */
+}
+
+.room-container table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+.room-container th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.room-container th {
+    background-color: #46211A;
+    color: #F1D3B2;
+}
+.room-container tr:hover {
+    background-color: #F1D3B2;
+}
+
+.back-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #46211A; /* Green */
+    border: none;
+    color: #F1D3B2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-button:hover {
+    background-color: #A43820;
+}
+
+
+
+
+
+.billing-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-height: 85vh;
+}
+.billing-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.billing-container th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.billing-container th {
+    background-color: #f2f2f2;
+}
+
+
+
